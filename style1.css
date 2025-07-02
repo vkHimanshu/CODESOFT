@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    color: #a259ff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* this pushes logo left and nav right */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px; /* spacing between links */
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #a259ff;
+  }
+  
+  
+  .navbar nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar nav a:hover {
+    color: #a259ff;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    background: #000;
+    min-height: 90vh;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    filter: brightness(0.3); /* Makes it blend with dark background */
+    transition: filter 0.3s;
+  }
+  
+  .hero-image img:hover {
+    filter: brightness(0.6);
+  }
+  
+  .content {
+    flex: 2;
+    text-align: left;
+    padding: 0 40px;
+  }
+  
+  
+  .lightbulb {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .lightbulb i {
+    font-size: 40px;
+  }
+  
+  .lightbulb p {
+    font-size: 12px;
+    margin-top: 5px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+  
+  .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .content h1 span {
+    color: #a259ff;
+  }
+  
+  .content p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border: 2px solid #a259ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #a259ff;
+  }
+  
+  .socials i {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .socials i:hover {
+    color: #a259ff;
+  }
+  
+  .scroll-down {
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    color: #a259ff;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+  .light-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .rope-horizontal {
+    width: 100vw; /* full width across the screen */
+    height: 3px;
+    background-color: #a259ff;
+    margin-bottom: 0;
+  }
+
+  .hanger {
+    position: absolute;
+    left: 30%; /* << this moves the bulb to 40% from the left */
+    top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rope-vertical {
+    width: 3px;
+    height: 70px;
+    background-color: #fff;
+  }
+  
+  .bulb {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .bulb i {
+    font-size: 40px;
+    text-shadow: 0 0 20px #fff; /* Optional glow effect */
+  }
+  
+  .bulb p {
+    font-size: 12px;
+    margin-top: 5px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: #ccc;
+  }
+  
